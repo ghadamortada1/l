@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <title>Skin Care</title>
+    </head>
+    <body>
+       
+
+        <div class="container">
+            <div class="gellary">
+                <div class="big-img-card">
+                    <img src="img/1.png" class="big-img">
+                </div>
+                <div class="small-img-card">
+                    <img src="img/1.png" class="small-img active">
+                    <img src="img/2.jpg" class="small-img">
+                    <img src="img/3.jpg" class="small-img">
+                    <img src="img/4.jpg" class="small-img">
+                    <img src="img/5.jpg" class="small-img">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src="jquery-3.7.1.min.js"></script>
+        <script>
+           $(".small-img").click(function(){
+            $(".small-img").removeClass("active");
+            $(this).addClass("active");
+            let imgSourse = $(this).attr("src");
+            $(".big-img").attr("src" , imgSourse)
+           });
+
+
+        </script>
+
+    </body>
+</html>

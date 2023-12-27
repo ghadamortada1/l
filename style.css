@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(238, 234, 228);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.gellary{
+    width: 500px;
+}
+.gellary .big-img{
+    width: 100%;
+}
+.gellary .small-img-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.gellary .small-img-card .small-img{
+    width: 20%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.gellary .small-img-card .small-img.active{
+    opacity: 1;
+}
